@@ -7,6 +7,17 @@
 
 <template>
   <Header></Header>
-  admin
+  <el-alert closable=true title="adminログイン完了" type="success" show-icon />
+  <p>Admin MyPage</p>
+  
   <Footer></Footer>
 </template>
+
+<style scoped>
+.el-alert {
+  margin: 20px 0 0;
+}
+.el-alert:first-child {
+  margin: 0;
+}
+</style>

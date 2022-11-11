@@ -16,6 +16,7 @@
   
      const useremail =ref('')
      const password =ref('')
+     const is_signedin =ref(false)
      
 
     
@@ -55,7 +56,9 @@
               cognitoUser.completeNewPasswordChallenge("Admin@Admin00", {}, this)
           },
 
+
           onSuccess: function() {
+            is_signedin.value = !is_signedin
             const result="/mypage_admin";
             location.assign(result);
           },

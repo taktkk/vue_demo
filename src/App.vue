@@ -4,7 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
+
     
     <div class="wrapper">
       
@@ -15,16 +15,12 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/signin">SignIn</RouterLink>
       </nav>
     </div>
-  </header>
 
   <RouterView />
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
+
 
 .logo {
   display: block;
@@ -75,11 +71,7 @@ nav a:first-of-type {
 
   nav {
     text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
 
-    padding: 1rem 0;
-    margin-top: 1rem;
   }
 }
 </style>
